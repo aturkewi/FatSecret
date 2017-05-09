@@ -32,7 +32,7 @@ FatSecret.configure do |config|
   config.access_key = <your access key>
   config.consumer_key = <your consumer key>
   config.shared_secret = <your shared secret>
-  config.logger = <your logger> #OPTIONAL
+  config.logger = Logger.new(STDOUT) # You can set this to any other logger, but at the very least you'll probably want this.
 end
 ```
 
